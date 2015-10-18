@@ -9,5 +9,6 @@ open RecursiveFizzBuzz
 let main argv = 
     printfn "Iterative:\n%s" (IterativeFizzBuzz 1 100)
     printfn "Recursive:\n%s" (RecursiveFizzBuzz 1 100)
+    printfn "Tail Recursive:\n%s" (TailRecursiveFizzBuzz 1 100 "")
     Console.ReadLine() |> ignore
     0 // return an integer exit code

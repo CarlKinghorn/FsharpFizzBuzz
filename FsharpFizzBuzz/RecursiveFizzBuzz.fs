@@ -15,7 +15,15 @@ let PrintNumber (x:int) y =
 let ProcessFizzBuzzNumber x =
     PrintFizz x |> PrintBuzz x |> PrintNumber x
 
+
 let rec RecursiveFizzBuzz start max =
     if start < max 
     then (ProcessFizzBuzzNumber start) + "\n" + RecursiveFizzBuzz (start+1) max
     else (ProcessFizzBuzzNumber start) + "\n"
+
+
+let rec TailRecursiveFizzBuzz start max acc =
+    if start <= max 
+    then TailRecursiveFizzBuzz (start+1) max 
+            (acc + (if acc = "" then "" else "\n") + (ProcessFizzBuzzNumber start))
+    else acc + "\n"
