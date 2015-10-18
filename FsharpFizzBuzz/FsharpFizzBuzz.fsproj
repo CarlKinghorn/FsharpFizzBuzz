@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="NaiveFizzBuzz.fs" />
+    <Compile Include="FoldReduceFizzBuzz.fs" />
     <Compile Include="RecursiveFizzBuzz.fs" />
     <Compile Include="Program.fs" />
     <None Include="App.config" />

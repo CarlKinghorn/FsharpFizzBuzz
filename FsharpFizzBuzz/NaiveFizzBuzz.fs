@@ -11,6 +11,8 @@ let IterativeFizzBuzz start max =
     let mutable i = start
     let mutable acc = ""
     while i <= max do
-        acc <- acc + (MatchFizzBuzz i) + "\n"
+        acc <- acc + 
+            (MatchFizzBuzz i) + 
+            (if i = max then "" else "\n")
         i <- i+1
     acc
